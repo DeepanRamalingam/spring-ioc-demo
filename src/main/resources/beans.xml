@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accountOne"  class="com.deepan.model.Account">
+        <constructor-arg name="accNo" value="12009" />
+        <constructor-arg name="bankName" value="DBS" />
+        <constructor-arg name="branchName" value="Trichy" />
+        <constructor-arg name="balance" value="12000.34" />
+
+        <constructor-arg name="accNo" value="12019" />
+
+    </bean>
+
+    <bean id="accountTwo"  class="com.deepan.model.Account">
+        <constructor-arg name="accNo" value="1340012" />
+        <constructor-arg name="bankName" value="UBS" />
+        <constructor-arg name="branchName" value="Trichy" />
+
+    </bean>
+
+    <bean id="accountThree"  class="com.deepan.model.Account">
+
+        <property name="accNo" value="130089" />
+
+    </bean>
+
+
+</beans>
+
+<!--
+
+inject collections
+inner beans
+bean referencing
+
+autowiring
+
+
+
+
+-->
